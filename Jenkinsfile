@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'docker build --tag python-docker'
+                sh 'docker build -t alexbgrv/pythonrep'
             }
         }
     }
