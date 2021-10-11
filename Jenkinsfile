@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'docker build -t alexbgrv/pythonrep'
+                sh 'docker build -t alexbgrv/pythonrep .'
             }
         }
     }
