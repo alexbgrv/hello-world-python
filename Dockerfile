@@ -1,7 +1,6 @@
 FROM python:3
 WORKDIR /service
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install -r
 COPY . ./
 EXPOSE 8080
 ENTRYPOINT ["python3", "app.py"]
