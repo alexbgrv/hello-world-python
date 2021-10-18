@@ -11,5 +11,10 @@ pipeline {
                 sh 'sudo docker build -t alexbgrv/pythonrep .'
             }
         }
+        stage('runbuild') {
+            steps {
+                sh 'sudo docker run alexbgrv/pythonrep'
+            }
+        }
     }
 }
